@@ -240,3 +240,6 @@ nav a[aria-current=page]{color:var(--p);border-color:var(--gold)}
 .mv.mv2{margin:0;grid-template-columns:1fr 1fr}
 @media(max-width:560px){.mv.mv2{grid-template-columns:1fr}}
 .qc a,.qc a>span{min-width:0}.qc b{overflow-wrap:anywhere}
+
+.sub,.mv.five{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.sub .chip,.mv .chip{flex:none}
