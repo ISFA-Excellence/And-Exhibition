@@ -1,0 +1,32 @@
+{
+ "id": "isfa-student",
+ "name": "ISFA Student",
+ "short_name": "ISFA Student",
+ "description": "ISFA Excellence and Exhibition student app",
+ "start_url": "student.html",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "portrait",
+ "background_color": "#ffffff",
+ "theme_color": "#4B086F",
+ "icons": [
+  {
+   "src": "assets/pwa/student-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "assets/pwa/student-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "assets/pwa/student-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#4B086F">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src https://script.google.com https://script.googleusercontent.com; form-action 'self'; base-uri 'none'">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<title>Login | ISFA Excellence and Exhibition</title>
+</head><body>
+<div class="lwrap"><main class="lcard">
+<a class="brand" href="index.html"><img src="assets/logo.jpg" alt="ISFA logo"><span><b>ISFA</b><small>Excellence and Exhibition</small></span></a>
+<div class="seg" role="tablist"><button id="tS" role="tab" aria-selected="true">Student</button><button id="tA" role="tab" aria-selected="false">Admin</button></div>
+<p class="err" id="exp"></p>
+<form id="fS" novalidate>
+<label for="sn">Student name</label><input id="sn" autocomplete="name" required>
+<label for="si">Student ID</label><input id="si" placeholder="Example: STU0001" autocapitalize="characters" autocomplete="off" required>
+<div id="mrow"><label for="sm">Registered mobile number</label><input id="sm" type="tel" inputmode="numeric" placeholder="10-digit number" autocomplete="tel-national"></div>
+<p class="err" id="eS" role="alert"></p><button class="btn" type="submit">Login as student</button>
+</form>
+<form id="fA" class="hide" novalidate>
+<label for="au">Username</label><input id="au" autocomplete="username" required>
+<label for="ap">Password</label><input id="ap" type="password" autocomplete="current-password" required>
+<p class="err" id="eA" role="alert"></p><button class="btn" type="submit">Login as admin</button>
+</form>
+<a class="back" href="index.html">Back to website</a>
+</main></div>
+<script src="assets/app.js"></script><script src="assets/login.js"></script>
+</body></html>
