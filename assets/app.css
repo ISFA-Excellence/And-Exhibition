@@ -135,8 +135,3 @@ tr:hover td{background:#fbf8fd}.acts{white-space:nowrap;display:flex;gap:.3rem}
 @media(max-width:860px){.pwa-bar{bottom:4.6rem}}
 
 .act{display:flex;gap:.7rem;align-items:center;padding:.55rem 0;border-bottom:1px solid var(--lav2)}.act:last-of-type{border-bottom:0}.act .chip{width:36px;height:36px;flex:none}.act b{display:block;font-size:.95rem}.act small{color:var(--mut)}
-
-.side button{transition:background .2s,box-shadow .2s,color .2s}
-.side button.on{background:var(--p);color:#fff;box-shadow:0 8px 18px -8px rgba(75,8,111,.75)}
-.side button.on .ico{filter:brightness(0) invert(1)}
-@media(max-width:860px){.side.bn button.on{background:var(--lav2);color:var(--p);font-weight:800;box-shadow:inset 0 3px 0 var(--p),0 -6px 14px -8px rgba(75,8,111,.6)}.side.bn button.on .ico{filter:none;transform:scale(1.12)}}
