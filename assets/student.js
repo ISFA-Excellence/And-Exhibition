@@ -76,7 +76,7 @@ notices:function(){return h('div',{class:'panel'},h('h2',null,'Notices'),notices
 };
 var TABS=[['home','Home','home'],['results','Results','star'],['attendance','Attendance','cal'],['fees','Fees','wallet'],['awards','Awards','shield'],['notices','Notices','mail']];
 function draw(){
-  var side=h('nav',{class:'side bn','aria-label':'Sections'},TABS.map(function(t){return h('button',{'aria-current':tab===t[0],onclick:function(){go(t[0])}},A.ic(t[2]),t[1])}));
+  var side=h('nav',{class:'side bn','aria-label':'Sections'},TABS.map(function(t){return h('button',{'aria-current':tab===t[0]?'true':null,class:tab===t[0]?'on':null,onclick:function(){go(t[0])}},A.ic(t[2]),t[1])}));
   root.replaceChildren(A.topbar('Student portal',D.student.name),h('div',{class:'shell has-bn'},side,h('main',{class:'main',id:'main'},V[tab]())))}
 A.api('dashboard').then(function(d){if(d.role!=='student')throw new Error('Not a student session');D=d;draw()}).catch(function(e){root.replaceChildren(h('div',{class:'main'},h('div',{class:'panel'},h('h2',null,'Could not load your portal'),h('p',null,e.message),h('p',null,A.btn('Back to login','logout',A.logout)))))});
 })();
